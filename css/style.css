@@ -128,70 +128,41 @@ img {
      SOLUZIONE RESPONSIVE
   ************************************************/
 
-/* FOR TABLET ******************  */
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1160px) {
   .container {
-    width: 98%;
-    margin: auto;
-  }
-  .lessons .container .row .col {
-    width: 50%;
-  }
-
-  .why-us .container .row .col img {
-    scale: 1.3;
-    height: 300px;
-    margin-top: -20px;
-  }
-  .why-us .container .row .col.col-right {
-    width: 80%;
-    margin-left: 40px;
+    width: 100%;
   }
 }
 
-/* FOR MOBILE ***************** */
+/* Risoluzione mobile  */
 
 @media screen and (max-width: 480px) {
-  header h1 {
-    width: 100%;
-  }
-
-  .lessons .container h2 {
-    width: 100%;
-    margin: auto;
-  }
   .row {
     flex-direction: column;
+    /* gap: 50px; */
   }
 
-  .lessons .container .row .col {
-    width: 80%;
-    margin: 30px auto;
+  /* soluzione senza usare gap  */
+  .lessons .col,
+  .steps .col,
+  .why-us .col {
+    width: 100%;
+    margin-bottom: 50px;
   }
 
-  .steps .container .row .col {
-    width: 80%;
-    margin: 20px auto;
+  .lessons .col:last-child,
+  .steps .col:last-child,
+  .why-us .col:last-child {
+    margin-bottom: 0px;
+  }
+
+  .steps,
+  .why-us {
+    margin-bottom: 0;
   }
 
   .why-us {
-    margin-top: -50px;
-    margin-bottom: -50px;
-    background-color: #222222;
-    padding-top: 40px;
-  }
-
-  .why-us .container h2 {
-    width: 80%;
-    margin: auto;
-  }
-  .why-us .container .row .col.col-left {
-    width: 70%;
-    margin: 90px auto;
-  }
-  .col.col-left img {
-    width: 100%;
-    object-fit: contain;
+    padding: 3rem 0;
+    background-color: #222;
   }
 }
